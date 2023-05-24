@@ -3,9 +3,14 @@
 print("DATOS PERSONALES")
 print("------------------")
 vNom=input("ingrese su nombre")
-vEdad=input("ingrese su edad")
-print("-----------------------..")
-print(f"su nombre es: {vNom}")
-print(f"su edad es: {vEdad}")
+while True:
 
-print("programa finalizado")
+    try:
+        vEdad=int(input("ingrese su edad"))
+    except:
+        print("valor no corresponde ")      
+    print("-----------------------..")
+    print(f"su nombre es: {vNom}")
+    print(f"su edad es: {vEdad}")
+
+    print("programa finalizado")
